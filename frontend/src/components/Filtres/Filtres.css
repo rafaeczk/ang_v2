@@ -1,0 +1,32 @@
+body.filtres-showed .App{
+    grid-template-columns: 1fr minmax(300px, 25%);
+}
+
+.Filtres{
+    background-color: rgba(44, 0, 44, 0.664);
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+.Filtres button.toggle-filtres-btn{
+    width: 100px;
+    height: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: rgb(255, 240, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(44, 0, 44);
+}.Filtres button.toggle-filtres-btn:active{
+    background-color: rgb(65, 4, 65);
+}
+.Filtres button.toggle-filtres-btn span{
+    font-size: 50px;
+    transform: rotate(270deg);
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    font-weight: 100;
+    position: fixed;
+    top: 50vh;
+}

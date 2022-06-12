@@ -1,0 +1,76 @@
+.Table{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0 0 0;
+}
+.Table table{
+    border-collapse: collapse;
+    caret-color: red;
+    max-width: 800px;
+}
+body.pl-hidden .Table td.pl{
+    color: transparent;
+    background-color: rgba(0, 0, 0, 0.178);
+    border-color: rgba(0, 0, 0, 0.178);
+}
+body.en-hidden .Table td.en{
+    color: transparent;
+    background-color: rgba(0, 0, 0, 0.178);
+    border-color: rgba(0, 0, 0, 0.178);
+}
+
+.Table table tr th{
+    min-width: 200px;
+    background-color: rgb(44, 0, 44);
+    padding: 7px 20px;
+    color: rgb(255, 240, 223);
+    font-size: 25px;
+    font-weight: 200;
+    text-align: left;
+    user-select: none;
+}
+.Table table tr th i{
+    font-size: 20px;
+    margin-right: 10px;
+    width: 30px;
+}.Table table tr th i:active{
+    color: rgb(155, 155, 155);
+}
+.Table table tr td{
+    min-width: 200px;
+    border-bottom: 1px solid rgb(44, 0, 44);
+    padding: 8px 20px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.Controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 600px;
+    height: 100px;
+    padding: 20px 0;
+}
+.Controls button{
+    outline: none;
+    border: none;
+    background-color: rgb(44, 0, 44);
+    color: rgb(255, 240, 223);
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+}.Controls button[disabled]{
+    background-color: rgba(44, 0, 44, 0.486);
+}.Controls button:active:not(button[disabled]){
+    background-color: rgba(44, 0, 44, 0.836);
+}
+.Controls div p{
+    margin: 0;
+    text-align: right;
+}
