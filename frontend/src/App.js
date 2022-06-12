@@ -5,8 +5,6 @@ import Table from './components/Table/Table';
 
 export const AppContext = React.createContext(null)
 
-
-
 function App() {
   const [db, setDb] = React.useState([]); // totalnie wszystkie rozdziały
   const [dbChapterIdx, setDbChapterIdx] = React.useState(0); // index obecnego rozdziału
@@ -37,6 +35,7 @@ function App() {
         }}>
         <Table />
         <Filtres />
+        lubbbbbbbbie się jebać
       </AppContext.Provider>
     </div>
   );
