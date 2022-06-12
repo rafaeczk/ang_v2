@@ -35,7 +35,6 @@ function App() {
         }}>
         <Table />
         <Filtres />
-        lubbbbbbbbie się jebać
       </AppContext.Provider>
     </div>
   );
