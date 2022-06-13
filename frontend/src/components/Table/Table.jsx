@@ -2,7 +2,6 @@ import React from 'react';
 import './Table.css';
 import TableRow from './TableRow';
 import Controls from './Controls';
-
 import { AppContext } from '../../App';
 
 const Table = () => {

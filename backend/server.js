@@ -31,4 +31,24 @@ app.get('/data', (req, res)=>{
 })
 
 
+
+app.get('/data/search', (req, res)=>{
+    const searchedPhrase = req.query.phrase;
+    var similar = [];
+    chapters.forEach(chapter=>{
+        chapter.forEach(el=>{
+            // (el.pl?.includes(searchedPhrase) || el.en?.includes(searchedPhrase)) && (similar.push(el));
+
+            (el.pl?.includes(searchedPhrase) || el.en?.includes(searchedPhrase)) && (similar.push({
+                pl: el.pl?.split(searchedPhrase),
+                en: el.en?.split(searchedPhrase)
+            }));
+        })
+    })
+    similar = similar.slice(0, 20);
+    (searchedPhrase=='') && (similar = []);
+    res.json(similar);
+})
+
+
 app.listen(5000, ()=>console.log('server is running'));

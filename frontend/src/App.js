@@ -18,7 +18,7 @@ function App() {
       .then(data => setDb(data))
   }, [])
   React.useEffect(()=>filtresShowed ? document.body.classList.add('filtres-showed') : document.body.classList.remove('filtres-showed'), [filtresShowed])
-  React.useEffect(()=>setPresentRows([0, 9]), [dbChapterIdx])
+  // React.useEffect(()=>setPresentRows([0, 9]), [dbChapterIdx])
 
   return (
     <div className="App">

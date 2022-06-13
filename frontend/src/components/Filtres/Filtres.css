@@ -1,9 +1,9 @@
 body.filtres-showed .App{
-    grid-template-columns: 1fr minmax(300px, 25%);
+    grid-template-columns: 1fr minmax(600px, 25%);
 }
 
 .Filtres{
-    background-color: rgba(44, 0, 44, 0.664);
+    background-color: rgba(44, 0, 44, .9);
     display: grid;
     grid-template-columns: 100px 1fr;
 }
@@ -29,4 +29,7 @@ body.filtres-showed .App{
     font-weight: 100;
     position: fixed;
     top: 50vh;
+}
+.Filtres .field{
+    padding: 30px 0;
 }

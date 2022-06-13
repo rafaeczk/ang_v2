@@ -1,7 +1,7 @@
 import React from 'react';
 import './Filtres.css';
-
 import { AppContext } from '../../App';
+import SearchBar from './SearchBar/SearchBar.jsx';
 
 const Filtres = () => {
     const Ctx = React.useContext(AppContext);
@@ -17,7 +17,7 @@ const Filtres = () => {
         </button>
         {(Ctx.filtresShowed) && (
           <div className="field">
-            
+            <SearchBar />
           </div>
         )}
     </div>

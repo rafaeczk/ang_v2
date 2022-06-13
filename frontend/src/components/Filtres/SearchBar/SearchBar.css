@@ -1,0 +1,49 @@
+.SearchBar{
+    padding: 20px 40px;
+}
+.SearchBar .container{
+    position: relative;
+    margin-bottom: 10px;
+    width: calc(100% - 20px);
+}
+.SearchBar .container input{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid rgb(255, 240, 223);
+    color: rgb(255, 240, 223);
+    font-size: 19px;
+    width: calc(100% - 20px);
+    padding: 5px 40px 5px 10px;
+    font-weight: 100;
+}.SearchBar .container input::placeholder{
+    color:rgba(255, 240, 223, 0.7);
+}
+.SearchBar .container button{
+    position: absolute;
+    right: -30px;
+    bottom: 50%;
+    transform: translateY(50%);
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: rgb(255, 240, 223);
+    padding: 4px 10px 0 10px;
+    font-size: 20px;
+    border-radius: 20%;
+}.SearchBar .container button:active{
+    color: rgba(255, 240, 223, .7)
+}
+
+.SearchBar .list{
+    color: rgb(255, 240, 223);
+    padding: 0 10px;
+    font-weight: 300;
+}
+.SearchBar .list p{
+    margin: 7px 0;
+}
+.SearchBar .list p .highlight{
+    text-decoration: underline rgb(197, 94, 94);
+    color: rgb(197, 94, 94);
+}
